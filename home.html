@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Pessoal</title>
+    <link rel="stylesheet" href="desafio.css">
+    <link rel="icon" href="./assets/imagens/desafio.png">
+</head>
+
+<body>
+    <main>
+        <div class="conteudo">
+
+            <div class="formulario">
+                <h2 style="text-align: center;">Informações pessoais</h2>
+                <form>
+                    <div id="container">
+                        <div>
+                            <p>Nome</p>
+                            <input type="text" style="width: 25vw" maxlength="60">
+                        </div>
+                        <div>
+                            <p>Sexo</p>
+                            <div class="radio">
+                                <input type="radio" id="M" name="gender" value="M">
+                                <label for="M">Masculino</label>
+                                <input type="radio" id="F" name="gender" value="F">
+                                <label for="F">Feminino</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="container">
+                        <div>
+                            <p>CPF</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p>RG</p>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <h2 style="text-align: center;">Endereço</h2>
+
+                    <div id="container">
+                        <div>
+                            <p>Logradouro</p>
+                            <input type="text" style="width: 20vw">
+                        </div>
+                        <div>
+                            <p>Número</p>
+                            <input type="number" style="width: 5vw">
+                        </div>
+                        <div>
+                            <p>Complemento</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div id="container">
+                        <div>
+                            <p>Bairro</p>
+                            <input type="text" style="width: 15vw">
+                        </div>
+                        <div>
+                            <p>Cidade</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p>Estado</p>
+                            <select name="UF">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h2 style="text-align: center;">Informações de contato </h2>
+                    <div id="container">
+                        <div>
+                            <p>Telefone</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p>Celular</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p>E-mail</p>
+                            <input type="email" style="width: 20vw">
+                        </div>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" value="Enviar" class="botao">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- <footer>Desenvolvido por Karyne Winkelmann</footer> -->
+</body>
+
+</html>

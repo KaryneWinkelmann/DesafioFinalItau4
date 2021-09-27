@@ -1,0 +1,88 @@
+.conteudo {
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1vh;
+    min-height: 96vh;
+    border: 3px solid rgb(11, 11, 151);
+}
+
+.formulario {
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+    max-height: 70vh;
+    align-items: center;
+    min-height: 90vh;
+}
+
+input {
+    border-radius: 7px;
+    height: 3vh;
+    text-align: center;
+}
+
+label {
+    height: 3vh;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: orange;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linha {
+    display: inline !important;
+    margin: 0 auto;
+    width: 70vw;
+}
+
+#container {
+    display: flex;
+    /* establish flex container */
+    flex-direction: row;
+    /* default value; can be omitted */
+    flex-wrap: nowrap;
+    /* default value; can be omitted */
+    justify-content: center;
+    /* switched from default (flex-start, see below) */
+    height: 10vh;
+    text-align: center;
+}
+
+#container>div {
+    background-color: rgb(225, 226, 230);
+    width: 40%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+p {
+    margin: 1vh;
+}
+
+.botao {
+    background-color: rgb(13, 45, 173);
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 6vh;
+}
+
+.enviar {
+    margin-top: 6vh;
+    text-align: center;
+    height: auto !important;
+}
