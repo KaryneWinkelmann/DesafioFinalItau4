@@ -23,6 +23,7 @@ input {
     border-radius: 7px;
     height: 3vh;
     text-align: center;
+    text-transform: uppercase;
 }
 
 label {
@@ -32,11 +33,20 @@ label {
 body {
     font-family: sans-serif;
     background-color: orange;
+}
+
+main {
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+footer {
+    float: right;
+    font-size: 18px;
+    margin: 2vw;
 }
 
 .linha {

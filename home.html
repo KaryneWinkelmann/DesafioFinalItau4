@@ -11,22 +11,25 @@
 <body>
     <main>
         <div class="conteudo">
-
             <div class="formulario">
+
                 <h2 style="text-align: center;">Informações pessoais</h2>
-                <form>
+
+                <form name="formulario" action="/test.php" method="post">
                     <div id="container">
                         <div>
                             <p>Nome</p>
-                            <input type="text" style="width: 25vw" maxlength="60">
+                            <input type="text" style="width: 25vw" maxlength="40" name="nome">
                         </div>
                         <div>
                             <p>Sexo</p>
                             <div class="radio">
-                                <input type="radio" id="M" name="gender" value="M">
+                                <input type="radio" id="M" name="gender" value="M" name="genero">
                                 <label for="M">Masculino</label>
-                                <input type="radio" id="F" name="gender" value="F">
+                                <input type="radio" id="F" name="gender" value="F" name="genero">
                                 <label for="F">Feminino</label>
+                                <input type="radio" id="X" name="gender" value="X" name="genero">
+                                <label for="X">Prefiro não informar</label>
                             </div>
                         </div>
                     </div>
@@ -34,42 +37,42 @@
                     <div id="container">
                         <div>
                             <p>CPF</p>
-                            <input type="text">
+                            <input type="text" name="cpf" maxlength="11">
                         </div>
                         <div>
                             <p>RG</p>
-                            <input type="text">
+                            <input type="text" maxlength="14">
                         </div>
                     </div>
 
                     <h2 style="text-align: center;">Endereço</h2>
-
                     <div id="container">
                         <div>
                             <p>Logradouro</p>
-                            <input type="text" style="width: 20vw">
+                            <input type="text" style="width: 25vw" maxlength="40" name="logradouro">
                         </div>
                         <div>
                             <p>Número</p>
-                            <input type="number" style="width: 5vw">
+                            <input type="number" style="width: 5vw" name="numero" maxlength="7">
                         </div>
                         <div>
                             <p>Complemento</p>
-                            <input type="text">
+                            <input type="text" style="width: 25vw" name="complemento" maxlength="40">
                         </div>
                     </div>
+
                     <div id="container">
                         <div>
                             <p>Bairro</p>
-                            <input type="text" style="width: 15vw">
+                            <input type="text" style="width: 15vw" maxlength="25" name="bairro" maxlength="20">
                         </div>
                         <div>
                             <p>Cidade</p>
-                            <input type="text">
+                            <input type="text" style="width: 15vw" name="cidade" maxlength="25">
                         </div>
                         <div>
                             <p>Estado</p>
-                            <select name="UF">
+                            <select name="uf">
                                 <option value="" disabled selected>Selecione</option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
@@ -106,27 +109,26 @@
                     <div id="container">
                         <div>
                             <p>Telefone</p>
-                            <input type="text">
+                            <input type="text" name="telefone" maxlength="13">
                         </div>
                         <div>
                             <p>Celular</p>
-                            <input type="text">
+                            <input type="text" name="celular" maxlength="14">
                         </div>
                         <div>
                             <p>E-mail</p>
-                            <input type="email" style="width: 20vw">
+                            <input type="email" style="width: 25vw" maxlength="40" name="email">
                         </div>
                     </div>
                     <div class="enviar">
-                        <input type="submit" value="Enviar" class="botao">
+                        <input type="button" value="Enviar" class="botao" onclick="validaCPF();">
                     </div>
                 </form>
             </div>
         </div>
     </main>
-
-
-    <!-- <footer>Desenvolvido por Karyne Winkelmann</footer> -->
+    <footer>Desenvolvido por Karyne Winkelmann</footer>
 </body>
+<script src="./desafio.js"></script>
 
 </html>
